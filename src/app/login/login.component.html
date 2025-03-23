@@ -1,0 +1,26 @@
+<div class="login-container">
+    <h2>Login</h2>
+    
+    <!-- Form using template-driven form -->
+    <form (ngSubmit)="onLogin()" #loginForm="ngForm">
+<div class="form-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          name="password"
+          [(ngModel)]="password"
+          required
+          #passwordField="ngModel"
+          class="form-control"
+        />
+        <div *ngIf="passwordField.invalid && passwordField.touched" class="error">
+          Password is required
+        </div>
+      </div>
+  
+      <button type="submit" [disabled]="loginForm.invalid" class="btn btn-primary">Login</button>
+    </form>
+  </div>
+  
+  

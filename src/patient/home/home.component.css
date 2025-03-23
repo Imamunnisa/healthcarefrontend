@@ -1,0 +1,65 @@
+/* Styling for the Home page container */
+.home-container {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Banner Styles */
+  .banner {
+    background-color: #3a3a3a;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+  }
+  
+  .banner h1 {
+    margin: 0;
+    font-size: 3em;
+  }
+  
+  .banner p {
+    font-size: 1.5em;
+  }
+  
+  /* Tiles Section */
+  .tiles {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .tile {
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .tile:hover {
+    transform: translateY(-10px);
+  }
+  
+  .tile img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .tile-content {
+    padding: 15px;
+  }
+  
+  .tile-content h3 {
+    font-size: 1.5em;
+    margin: 10px 0;
+  }
+  
+  .tile-content p {
+    font-size: 1em;
+    color: #555;
+  }
+  
